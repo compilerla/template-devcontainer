@@ -1,9 +1,10 @@
 {
   "name": "compilerla/template-devcontainer",
-  "dockerComposeFile": ["./compose.yml"],
+  "dockerComposeFile": ["compose.yml"],
   "service": "dev",
   "runServices": ["dev"],
   "workspaceFolder": "/home/compiler/src",
+  "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",

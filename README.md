@@ -2,8 +2,11 @@
 
 A [template repository][template-repo] with a minimal [VS Code devcontainer][devcontainer] setup.
 
-The base Docker image for the devconatiner is `python:3.10` and includes support for common dev tooling like `git`, `curl`, and
-`pip`.
+The base Docker image for the devconatiner is `python:3.10` and includes support for common dev tooling like `git`, `curl`,
+`pip`, and `pre-commit`.
+
+The [`pre-commit` configuration][pre-commit-config] includes a number of useful [`pre-commit-hooks`][pre-commit-hooks] as well
+as Compiler's [`conventional-pre-commit`][conventional-pre-commit] hook.
 
 ## Usage
 
@@ -28,6 +31,9 @@ If you do not receive a prompt, or when you feel like starting from a fresh envi
 
 [Apache 2.0](LICENSE)
 
+[conventional-pre-commit]: https://github.com/compilerla/conventional-pre-commit
 [devcontainer]: https://code.visualstudio.com/docs/remote/containers
 [generate]: https://github.com/compilerla/template-devcontainer/generate
+[pre-commit-config]: .pre-commit-config.yaml
+[pre-commit-hooks]: https://github.com/pre-commit/pre-commit-hooks
 [template-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
