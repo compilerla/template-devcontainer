@@ -2,11 +2,13 @@
 
 A [template repository][template-repo] with a minimal [VS Code devcontainer][devcontainer] setup.
 
-The base Docker image for the devconatiner is `python:3.10` and includes support for common dev tooling like `git`, `curl`,
-`pip`, and `pre-commit`.
+## Features
 
-The [`pre-commit` configuration][pre-commit-config] includes a number of useful [`pre-commit-hooks`][pre-commit-hooks] as well
-as Compiler's [`conventional-pre-commit`][conventional-pre-commit] hook.
+- Base Docker image `python:3.10` includes support for common dev tooling like `git`, `curl`, `pip`, and `pre-commit`
+- Includes VS Code extensions like [`GitLens`][gitlens] and [`Prettier`][prettier] and good default settings for the editor
+- The [`pre-commit` configuration][pre-commit-config] includes a number of useful [`pre-commit-hooks`][pre-commit-hooks] and
+  Compiler's [`conventional-pre-commit`][conventional-pre-commit] hook
+- A separate `docs` service builds documentation using [`mkdocs-material`][mkdocs-material]
 
 ## Usage
 
@@ -34,6 +36,9 @@ If you do not receive a prompt, or when you feel like starting from a fresh envi
 [conventional-pre-commit]: https://github.com/compilerla/conventional-pre-commit
 [devcontainer]: https://code.visualstudio.com/docs/remote/containers
 [generate]: https://github.com/compilerla/template-devcontainer/generate
+[gitlens]: https://gitlens.amod.io/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
 [pre-commit-config]: .pre-commit-config.yaml
 [pre-commit-hooks]: https://github.com/pre-commit/pre-commit-hooks
+[prettier]: https://prettier.io/
 [template-repo]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository

@@ -1,1 +1,6 @@
+mkdocs
+mkdocs-awesome-pages-plugin
+mkdocs-macros-plugin
+mkdocs-material
+mkdocs-redirects
 pre-commit
