@@ -24,6 +24,10 @@ RUN python -m pip install --upgrade pip
 COPY .devcontainer/requirements.txt .devcontainer/requirements.txt
 RUN pip install --no-cache-dir -r .devcontainer/requirements.txt
 
+# install docs requirements
+COPY docs/requirements.txt docs/requirements.txt
+RUN pip install --no-cache-dir -r docs/requirements.txt
+
 # install pre-commit environments in throwaway Git repository
 # https://stackoverflow.com/a/68758943
 COPY .pre-commit-config.yaml .
