@@ -5,8 +5,6 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    entrypoint: []
-    command: sleep infinity
     image: compilerla/template-devcontainer:dev
     volumes:
       - ../:/home/compiler/src

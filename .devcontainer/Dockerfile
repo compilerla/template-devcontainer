@@ -34,3 +34,7 @@ RUN pip install --no-cache-dir -r docs/requirements.txt
 RUN git init . && \
     pre-commit install-hooks && \
     rm -rf .git
+
+CMD sleep infinity
+
+ENTRYPOINT []
