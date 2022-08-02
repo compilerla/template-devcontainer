@@ -18,18 +18,6 @@ As a remote-first, cross-platform development team, Compiler uses devcontainers 
 and local development process for our engineering team, and to ensure our Open Source projects are widely accessible and easily
 reproducable for others.
 
-## Why?
-
-In no particular order, here are some reasons Compiler likes to use devcontainers as part of our software engineering workflow:
-
-| Reason                     | More                                                                                                                                                                                                                                                                                                                           |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Cross-platform**         | With only VS Code and Docker as dependencies, devcontainers allow developers on Linux, Mac, and Windows to work in a consistent environment, no matter the project's stack                                                                                                                                                     |
-| **Easily extendable**      | The VS Code community maintains a [library of extensions](https://marketplace.visualstudio.com/VSCode) to add features and functionality to the development environment; individual personalizations can be made via [dotfiles](https://code.visualstudio.com/docs/remote/containers#_personalizing-with-dotfile-repositories) |
-| **Enforce best practices** | Baking linters, `pre-commit` checks, test runners, and more into the devcontainer ensures the team's best practices are built-in to the development workflow                                                                                                                                                                   |
-| **Rapid onboarding**       | By minimizing the steps from `git clone` to getting tests to pass or the app running locally, devcontainers make it easier to onboard as a new developer and spend time contributing instead of wallowing in environment setup                                                                                                 |
-| **Unified code style**     | With common editor settings like code formatting on save, standard indentation characters and spacing, consistent line endings, and more, the team never has to worry about what the code looks like                                                                                                                           |
-
 ## The image
 
 The devcontainer's image is called `compilerla/template-devcontainer`.
