@@ -5,12 +5,12 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    image: compilerla/template-devcontainer:dev
+    image: compilerla/template-devcontainer:main
     volumes:
       - ../:/home/compiler/src
 
   docs:
-    image: compilerla/template-devcontainer:dev
+    image: compilerla/template-devcontainer:main
     entrypoint: mkdocs
     command: serve --dev-addr "0.0.0.0:8000"
     ports:
