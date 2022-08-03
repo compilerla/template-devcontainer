@@ -2,6 +2,8 @@
 
 A [template repository][template-repo] with a minimal [VS Code devcontainer][devcontainer] setup.
 
+Read the full documentation online: <https://compilerla.github.io/template-devcontainer>
+
 ## Features
 
 - Base Docker image `python:3.10` includes support for common dev tooling like `git`, `curl`, `pip`, and `pre-commit`
