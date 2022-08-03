@@ -13,3 +13,7 @@ MD033: false
 
 # Allow duplicate headers
 MD024: false
+
+# Allow mixing code block and fenced code regions
+# Useful for pages with admonitions and fenced code blocks
+MD046: false
