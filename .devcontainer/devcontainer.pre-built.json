@@ -1,0 +1,22 @@
+{
+  "name": "compilerla/template-devcontainer-pre-built",
+  "image": "ghcr.io/compilerla/template-devcontainer:main",
+  "postAttachCommand": "pre-commit install --overwrite",
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/bin/bash"
+      }
+    }
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "mhutchie.git-graph"
+  ]
+}
