@@ -1,13 +1,13 @@
-name: compilerla/template-devcontainer
+name: template-devcontainer
 
 services:
   dev:
     build:
-      context: ..
+      context: .
       dockerfile: .devcontainer/Dockerfile
     image: compilerla/template-devcontainer:main
     volumes:
-      - ../:/home/compiler/src
+      - ./:/home/compiler/src
 
   docs:
     image: compilerla/template-devcontainer:main
@@ -16,4 +16,4 @@ services:
     ports:
       - "8000"
     volumes:
-      - ../:/home/compiler/src
+      - ./:/home/compiler/src

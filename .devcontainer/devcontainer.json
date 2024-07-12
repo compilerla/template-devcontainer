@@ -1,6 +1,6 @@
 {
   "name": "compilerla/template-devcontainer",
-  "dockerComposeFile": ["compose.yml"],
+  "dockerComposeFile": ["../compose.yml"],
   "service": "dev",
   "runServices": ["dev", "docs"],
   "workspaceFolder": "/home/compiler/src",
