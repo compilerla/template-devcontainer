@@ -24,7 +24,7 @@ The devcontainer's image is called `compilerla/template-devcontainer`.
 
 ### Base
 
-The image is based on [`python:3.10`](https://hub.docker.com/_/python), to ease installation of common tooling like
+The image is based on [`python:3.11`](https://hub.docker.com/_/python), to ease installation of common tooling like
 [`mkdocs`](docs.md) and [`pre-commit`](pre-commit.md).
 
 ### Setup
