@@ -20,6 +20,8 @@ Docs are built using [`mkdocs`](https://www.mkdocs.org/). This site is built usi
 
 In no particular order, here are some reasons Compiler likes to use devcontainers as part of our software engineering workflow:
 
+_Read more in our blog post: [How to support a platform-agnostic engineering team with VS Code Dev Containers](https://compiler.la/blog/2024/devcontainer-platform-agnostic-team)_.
+
 | Reason                     | More                                                                                                                                                                                                                                                                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Cross-platform**         | With only VS Code and Docker as dependencies, devcontainers allow developers on Linux, Mac, and Windows to work in a consistent environment, no matter the project's stack                                                                                                                                                     |
