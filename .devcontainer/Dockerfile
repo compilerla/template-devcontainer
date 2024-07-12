@@ -17,7 +17,7 @@ USER $USER
 WORKDIR /home/$USER/src
 
 # update PATH for local pip installs
-ENV PATH "$PATH:/home/$USER/.local/bin"
+ENV PATH="$PATH:/home/$USER/.local/bin"
 
 # upgrade pip
 RUN python -m pip install --upgrade pip
