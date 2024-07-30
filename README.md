@@ -4,9 +4,13 @@ A [template repository][template-repo] with a minimal [VS Code devcontainer][dev
 
 Read the full documentation online: <https://compilerla.github.io/template-devcontainer>
 
+## Why?
+
+Read more in our blog post: [How to support a platform-agnostic engineering team with VS Code Dev Containers](https://compiler.la/blog/2024/devcontainer-platform-agnostic-team).
+
 ## Features
 
-- Base Docker image `python:3.10` includes support for common dev tooling like `git`, `curl`, `pip`, and `pre-commit`
+- Base Docker image `python:3.11` includes support for common dev tooling like `git`, `curl`, `pip`, and `pre-commit`
 - Includes VS Code extensions like [`GitLens`][gitlens] and [`Prettier`][prettier] and good default settings for the editor
 - The [`pre-commit` configuration][pre-commit-config] includes a number of useful [`pre-commit-hooks`][pre-commit-hooks] and
   Compiler's [`conventional-pre-commit`][conventional-pre-commit] hook

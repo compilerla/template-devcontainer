@@ -1,4 +1,6 @@
-FROM python:3.10
+ARG PYTHON_VERSION=3.11
+
+FROM python:${PYTHON_VERSION}
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
@@ -15,7 +17,7 @@ USER $USER
 WORKDIR /home/$USER/src
 
 # update PATH for local pip installs
-ENV PATH "$PATH:/home/$USER/.local/bin"
+ENV PATH="$PATH:/home/$USER/.local/bin"
 
 # upgrade pip
 RUN python -m pip install --upgrade pip

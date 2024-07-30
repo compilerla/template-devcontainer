@@ -8,8 +8,7 @@
 
 ### Docker
 
-Docker is required; the easiest way to get Docker is by downloading and installing [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-for Linux, Mac (including M2!), and Windows.
+Docker is required; the easiest way to get Docker is by downloading and installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Linux, Mac (including Apple Silicon!) and Windows.
 
 ### VS Code
 

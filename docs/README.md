@@ -20,6 +20,8 @@ Docs are built using [`mkdocs`](https://www.mkdocs.org/). This site is built usi
 
 In no particular order, here are some reasons Compiler likes to use devcontainers as part of our software engineering workflow:
 
+_Read more in our blog post: [How to support a platform-agnostic engineering team with VS Code Dev Containers](https://compiler.la/blog/2024/devcontainer-platform-agnostic-team)_.
+
 | Reason                     | More                                                                                                                                                                                                                                                                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Cross-platform**         | With only VS Code and Docker as dependencies, devcontainers allow developers on Linux, Mac, and Windows to work in a consistent environment, no matter the project's stack                                                                                                                                                     |
@@ -37,7 +39,7 @@ Some of our recent work built on the devcontainer pattern includes:
 - [`cal-itp/benefits`](https://github.com/cal-itp/benefits) (Python/Django web app)
 - [`cal-itp/eligibility-api`](https://github.com/cal-itp/eligibility-api) (Python API library)
 - [`cal-itp/eligibility-server`](https://github.com/cal-itp/eligibility-server) (Python/Flask API server)
-- [`cal-itp/hashfields`](https://github.com/cal-itp/hashfields) (.NET core CLI tool)
+- [`cal-itp/hashfields`](https://github.com/cal-itp/hashfields) (Python CLI tool)
+- [`cal-itp/mobility-marketplace`](https://github.com/cal-itp/mobility-marketplace) (Jekyll static site)
 - [`compilerla/compiler.la`](https://github.com/compilerla/compiler.la) (Jekyll static site)
 - [`compilerla/conventional-pre-commit`](https://github.com/compilerla/conventional-pre-commit) (Python pre-commit hook)
-- [`compilerla/intake-html-table`](https://github.com/compilerla/intake-html-table) (Python intake plugin)

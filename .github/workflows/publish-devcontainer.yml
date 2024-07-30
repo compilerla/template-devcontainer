@@ -13,32 +13,41 @@ defaults:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Docker Login to GitHub Container Registry
+      - name: Docker Login to GHCR
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build, tag, and push image to GitHub Container Registry
+      - name: Build, tag, and push image to GHCR [python ${{ matrix.python-version }}]
         uses: docker/build-push-action@v6
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          build-args: GIT-SHA=${{ github.sha }}
+          build-args: |
+            GIT-SHA=${{ github.sha }}
+            PYTHON_VERSION=${{ matrix.python-version }}
           cache-from: type=gha,scope=compilerla
           cache-to: type=gha,scope=compilerla,mode=max
           context: .
           file: .devcontainer/Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ${{ matrix.python-version == '3.11' && format('ghcr.io/{0}:main', github.repository) || format('ghcr.io/{0}:main_{1}', github.repository, matrix.python-version) }}
+            ${{ matrix.python-version == '3.11' && format('ghcr.io/{0}:{1}', github.repository, github.sha) || format('ghcr.io/{0}:{1}_{2}', github.repository, github.sha, matrix.python-version) }}

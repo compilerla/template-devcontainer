@@ -6,11 +6,17 @@
     - **GHCR Packages:** [`compilerla/template-devcontainer`](https://github.com/compilerla/template-devcontainer/pkgs/container/template-devcontainer)
     - **Minimal devcontainer.json:** [`devcontainer.pre-built.json`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/devcontainer.pre-built.json)
 
-`template-devcontainer` maintains a [GitHub Actions](https://github.com/features/actions) workflow that publishes the Docker
-image to [GitHub Container Registry (GHCR)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+`template-devcontainer` maintains a [GitHub Actions](https://github.com/features/actions) workflow that publishes Docker
+images to [GitHub Container Registry (GHCR)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 
-The publish is triggered for every push to the `main` branch, and the image tag `:main` always represents the latest commit on
-that branch.
+The publish is triggered for every push to the `main` branch, and multiple image tags are created:
+
+- `main` uses the default Python version of 3.11
+- `main_3.10` uses Python 3.10
+- `main_3.12` uses Python 3.12
+
+There are also corresponding tags for the git SHA of the commit on `main` that triggered the build
+(e.g. `sha`, `sha_3.10`, and `sha_3.12`).
 
 This makes the pre-built devcontainer image available for use in other projects, potentially decreasing startup and onboarding
 time even further.
