@@ -5,7 +5,7 @@
     - **Main config file:** [`mkdocs.yml`](https://github.com/compilerla/template-devcontainer/blob/main/mkdocs.yml)
     - **Additional dependencies:** [`docs/requirements.txt`](https://github.com/compilerla/template-devcontainer/blob/main/docs/requirements.txt)
     - **Installation:** [`Dockerfile`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/Dockerfile)
-    - **Service definition:** [`compose.yml`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/compose.yml)
+    - **Service definition:** [`compose.yml`](https://github.com/compilerla/template-devcontainer/blob/main/compose.yml)
 
 ## Introduction
 
