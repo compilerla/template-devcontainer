@@ -5,7 +5,7 @@
     - **Main config file:** [`devcontainer.json`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/devcontainer.json)
     - **Dependencies:** [`requirements.txt`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/requirements.txt)
     - **Dockerfile:** [`Dockerfile`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/Dockerfile)
-    - **Service definition:** [`compose.yml`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/compose.yml)
+    - **Service definition:** [`compose.yml`](https://github.com/compilerla/template-devcontainer/blob/main/compose.yml)
     - **Finalization:** [`postAttach.sh`](https://github.com/compilerla/template-devcontainer/blob/main/.devcontainer/postAttach.sh)
 
 ## Introduction
